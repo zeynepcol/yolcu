@@ -1,6 +1,7 @@
 # yolcu
 
-A new Flutter project.
+This **yolcu360** mobile project is part of the **Techcareer.net - Flutter Builder Bootcamp**, developed alongside the course to practice and enhance my Flutter skills, simultaneously while learning the concepts.
+
 
 ## Getting Started
 

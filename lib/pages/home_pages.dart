@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:yolcu/pages/campaigns_page.dart';
+import 'package:yolcu/pages/search_page.dart';
 
 class HomeScreen extends StatefulWidget{
   @override
@@ -8,6 +10,10 @@ class HomeScreen extends StatefulWidget{
 class _HomeScreenState extends State<HomeScreen>{
   int _selectedIndex = 0;
 
+  final List<Widget> _tabs =[
+    SearchTab(),//Ara sekmesi
+    CampaignTab(),
+  ];
 
   void _onItemTapped(int index){
     setState(() {
@@ -27,7 +33,17 @@ class _HomeScreenState extends State<HomeScreen>{
         onTap: _onItemTapped,
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.grey,
-        
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_month_rounded),
+              label: 'Ara'
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.local_offer),
+              label: 'Kampanyalar'
+          )
+        ],
+      ),
     );
   }
 }

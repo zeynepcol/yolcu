@@ -17,6 +17,11 @@ class MoreTab extends StatelessWidget{
               title: Text('Hakkımızda'),
               onTap: (){},
             ),
+            ListTile(
+              leading: Icon(Icons.email),
+              title: Text('İletişim'),
+              onTap: (){},
+            ),
             
         ),
       ),

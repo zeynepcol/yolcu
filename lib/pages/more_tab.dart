@@ -8,7 +8,18 @@ class MoreTab extends StatelessWidget{
         title: Text('Diğer'),
         centerTitle: true,
       ),
-
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ListTile(
+              leading: Icon(Icons.info),
+              title: Text('Hakkımızda'),
+              onTap: (){},
+            ),
+            
+        ),
+      ),
     );
   }
 }
